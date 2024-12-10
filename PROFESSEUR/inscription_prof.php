@@ -19,14 +19,14 @@ if(isset($_POST['id'])){
 <HTML>
 
 <HEAD>
-    <TITLE>inscription d'un visteur </TITLE>
+    <TITLE>INSCRIPTION</TITLE>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/style_formulaire1.css">
 </HEAD>
 
 <BODY>
     <form method="post">
-        <h1>BIENVENU </h1>
+        <h1>WELCOME</h1>
         <label>ID: <span>*</span></label>
         <input type="text" name="id" value="">
         <label>Email: <span>*</span></label>
