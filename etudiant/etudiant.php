@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion Étudiants</title>
+    <title>Student Management</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -40,7 +40,7 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center my-4">Gestion des Étudiants</h1>
+        <h1 class="text-center my-4">Student Management</h1>
         <form method="post" class="d-flex justify-content-center align-items-center mb-4 gap-3">
             <input type="text" name="cin1" id="cin1" class="form-control w-25" placeholder="CIN d'étudiant">
             <input type="submit" value="Chercher" class="btn btn-primary">
@@ -116,15 +116,15 @@
                     <td>{$row['datee']}</td>
                     <td>{$row['classe']}</td>
                     <td>
-                        <a href='../isima/etudiant1.php?emails={$row['email']}&id={$row['id']}' class='btn btn-success btn-sm'>Modifier</a>
-                        <a href='?id={$row['id']}' onclick='return confirm(\"Êtes-vous sûr de vouloir supprimer cet étudiant ?\");' class='btn btn-danger btn-sm'>Supprimer</a>
+                        <a href='../isima/etudiant1.php?emails={$row['email']}&id={$row['id']}' class='btn btn-success btn-sm'>ModifY</a>
+                        <a href='?id={$row['id']}' onclick='return confirm(\"Are you sure you want to delete this student?\");' class='btn btn-danger btn-sm'>DELET</a>
                     </td>
                 </tr>";
             }
             echo "</tbody></table>";
         }
          else {
-            echo "<div class='alert alert-warning'>Asucun étudiant trouver.</div>";
+            echo "<div class='alert alert-warning'>No students found.</div>";
         }
         ?>
     </div>
